@@ -6,6 +6,6 @@ public class PrintFormatacaoNumeros {
         float valor = 7654.321f;
         DecimalFormat df = new DecimalFormat("###,###,###,###,###.00");
         System.out.println("Valor: R$ " + df.format(valor));
-        System.out.printf("Taxa: %.2f%% \n", taxa);
+        System.out.printf("Taxa: %.2f%%\n", taxa);
     }
 }
