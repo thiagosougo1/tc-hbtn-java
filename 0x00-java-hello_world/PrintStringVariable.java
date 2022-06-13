@@ -3,7 +3,6 @@ public class PrintStringVariable {
         String texto = "Holberton School";
         System.out.println(texto);
         System.out.println(texto);
-        System.out.println(texto.substring(0, 10));
-
+        System.out.println(texto.substring(0, 9));
     }
 }
