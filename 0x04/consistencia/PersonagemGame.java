@@ -1,12 +1,12 @@
-package status;
+package consistencia;
 
 public class PersonagemGame {
     private int saudeAtual;
     private String nome;
     private String status;
 
-    public PersonagemGame() {
-        this.saudeAtual = saudeAtual;
+    public PersonagemGame(int saudeAtual, String nome) {
+        setSaudeAtual(saudeAtual);
         this.nome = nome;
     }
 
@@ -27,7 +27,9 @@ public class PersonagemGame {
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        if(nome != null && nome != ""){
+            this.nome = nome;
+        }
     }
     
     public void tomarDano(int quantidadeDeDano){
