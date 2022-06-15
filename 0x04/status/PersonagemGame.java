@@ -1,3 +1,4 @@
+package status;
 
 public class PersonagemGame {
     private int saudeAtual;
@@ -31,16 +32,19 @@ public class PersonagemGame {
     
     public void tomarDano(int quantidadeDeDano){
         saudeAtual -= quantidadeDeDano;
+        setSaudeAtual(saudeAtual);
         if(saudeAtual < 0)
-            saudeAtual = 0;
+            setSaudeAtual(0);;
     }
 
     public void receberCura(int quantidadeDeCura){
         saudeAtual += quantidadeDeCura;
+        setSaudeAtual(saudeAtual);
         int sub;
         if(saudeAtual > 100){
             sub = saudeAtual - 100;
             saudeAtual -= sub;
+            setSaudeAtual(saudeAtual);
         }
     }
 
