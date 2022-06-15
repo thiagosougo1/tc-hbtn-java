@@ -1,10 +1,11 @@
 package TiposPrimitivos_Wrapper.inteiro_positivo;
 
 public class InteiroPositivo {
-    Object valor = new Object();
+    int valor;
     
-    InteiroPositivo(Object valor){
-        this.valor = valor;
+    InteiroPositivo(int valor){
+        Object x = valor;
+        this.valor = (int) x;
     }
 
     Object getValor(){
@@ -18,7 +19,6 @@ public class InteiroPositivo {
     Boolean ehPrimo(){
         return true;
     }
-
 
     String getMessage(){
         return "Valor nao eh um valor inteiro positivo";
