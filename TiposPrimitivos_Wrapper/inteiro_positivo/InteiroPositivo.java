@@ -1,4 +1,3 @@
-
 public class InteiroPositivo {
     private int valor;
     String dado;
