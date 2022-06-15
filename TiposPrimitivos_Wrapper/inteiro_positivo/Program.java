@@ -2,7 +2,7 @@ package TiposPrimitivos_Wrapper.inteiro_positivo;
 public class Program {
     public static void main(String[] args) {
         try {
-            InteiroPositivo inteiroPositivo = new InteiroPositivo(1);
+            InteiroPositivo inteiroPositivo = new InteiroPositivo("1");
             System.out.println(inteiroPositivo.getValor() + " - false" );
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
