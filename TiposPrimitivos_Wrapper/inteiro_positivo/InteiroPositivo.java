@@ -25,9 +25,9 @@ public class InteiroPositivo {
         return true;
     }
 
-    String ehInteiro(){
+    Boolean ehInteiro(){
         if(valor < 0)
-            return "Valor nao eh um valor inteiro positivo";
-        return "";
+            return false;
+        return true;
     }
 }
