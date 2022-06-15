@@ -30,4 +30,10 @@ public class InteiroPositivo {
         }
         return true;
     }
+
+    Boolean ehPositivo() {
+        if(valor > 0)
+            return true;
+        return false;
+    }
 }

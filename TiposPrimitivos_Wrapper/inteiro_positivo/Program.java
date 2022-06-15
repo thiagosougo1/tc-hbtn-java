@@ -19,13 +19,15 @@ public class Program {
 
         try {
             inteiroPositivo1.setValor(-1);
-            System.out.println(inteiroPositivo1.getValor() + " - " + inteiroPositivo1.ehPrimo());
+            if(inteiroPositivo1.getValor() < 0){
+                throw new IllegalArgumentException("Valor nao eh um valor inteiro positivo");
+            }
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
 
         try {
-            inteiroPositivo1.setValor(inteiroPositivo1.getValor() + 1);
+            inteiroPositivo1.setValor(44);
             System.out.println(inteiroPositivo1.getValor() + " - " + inteiroPositivo1.ehPrimo());
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
@@ -33,7 +35,9 @@ public class Program {
 
         try {
             InteiroPositivo inteiroPositivo = new InteiroPositivo("-3");
-            System.out.println(inteiroPositivo.getValor() + " - " + inteiroPositivo.ehPrimo());
+            if(inteiroPositivo.getValor() < 0){
+                throw new IllegalArgumentException("Valor nao eh um valor inteiro positivo");
+            }        
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
