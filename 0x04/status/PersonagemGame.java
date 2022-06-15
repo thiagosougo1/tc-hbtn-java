@@ -1,8 +1,8 @@
-package metodos;
 
 public class PersonagemGame {
     private int saudeAtual;
     private String nome;
+    private String status;
 
     public PersonagemGame() {
         this.saudeAtual = saudeAtual;
@@ -15,6 +15,10 @@ public class PersonagemGame {
 
     public void setSaudeAtual(int saudeAtual) {
         this.saudeAtual = saudeAtual;
+        if(saudeAtual > 0)
+            status = "vivo";
+        else 
+            status = "morto";
     }
 
     public String getNome() {
@@ -38,5 +42,9 @@ public class PersonagemGame {
             sub = saudeAtual - 100;
             saudeAtual -= sub;
         }
+    }
+
+    public String getStatus(){
+        return this.status;
     }
 }
