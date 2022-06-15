@@ -18,4 +18,9 @@ public class InteiroPositivo {
     Boolean ehPrimo(){
         return true;
     }
+
+
+    String getMessage(){
+        return "Valor nao eh um valor inteiro positivo";
+    }
 }
