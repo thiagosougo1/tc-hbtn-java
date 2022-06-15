@@ -1,13 +1,23 @@
+package TiposPrimitivos_Wrapper.inteiro_positivo;
 public class InteiroPositivo {
     private int valor;
     String dado;
 
     InteiroPositivo(int valor) {
-        this.valor = valor;
+        if(valor > 0)
+            this.valor = valor;
+        else
+            throw new IllegalArgumentException("Valor nao eh um valor inteiro positivo");
+
     }
 
     InteiroPositivo(String valor) {
-        this.valor = Integer.parseInt(valor);
+        int num = Integer.parseInt(valor);
+        if(num > 0)
+            this.valor = num;
+        else
+            throw new IllegalArgumentException("Valor nao eh um valor inteiro positivo");
+
     }
 
     public int getValor() {
@@ -15,8 +25,10 @@ public class InteiroPositivo {
     }
 
     public void setValor(int valor) {
+        if(valor > 0)
         this.valor = valor;
-    }
+    else
+        throw new IllegalArgumentException("Valor nao eh um valor inteiro positivo");    }
 
     Boolean ehPrimo(){
         if (valor <= 1)
@@ -27,12 +39,5 @@ public class InteiroPositivo {
                 return false;
         }
         return true;
-    }
-
-    Boolean ehPositivo() {
-        if(valor < 0){
-            throw new IllegalArgumentException("Valor nao eh um valor inteiro positivo");
-        }  
-        return false;
     }
 }

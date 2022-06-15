@@ -20,7 +20,6 @@ public class Program {
 
         try {
             inteiroPositivo1.setValor(-1);
-            inteiroPositivo1.ehPositivo();   
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
@@ -34,7 +33,6 @@ public class Program {
 
         try {
             InteiroPositivo inteiroPositivo = new InteiroPositivo("-3");
-            inteiroPositivo.ehPositivo();   
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
