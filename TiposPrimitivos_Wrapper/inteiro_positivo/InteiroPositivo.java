@@ -32,8 +32,9 @@ public class InteiroPositivo {
     }
 
     Boolean ehPositivo() {
-        if(valor > 0)
-            return true;
+        if(valor < 0){
+            throw new IllegalArgumentException("Valor nao eh um valor inteiro positivo");
+        }  
         return false;
     }
 }
