@@ -10,8 +10,9 @@ public class InteiroPositivo {
     String getValor(){
         return valor;
     }
-    public void setValor(String valor) {
-        this.valor = valor;
+    public void setValor(int valor) {
+        Integer inteiro = new Integer(valor);
+        this.valor = inteiro;
     }
     
     Boolean ehPrimo(){
