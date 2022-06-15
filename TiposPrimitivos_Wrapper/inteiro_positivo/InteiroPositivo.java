@@ -1,17 +1,17 @@
 package TiposPrimitivos_Wrapper.inteiro_positivo;
 
 public class InteiroPositivo {
-    int valor;
+    Object valor = new Object();
     
-    InteiroPositivo(int valor){
+    InteiroPositivo(Object valor){
         this.valor = valor;
     }
 
-    String getValor(){
+    Object getValor(){
         return valor;
     }
-    public void setValor(int valor) {
-        Integer inteiro = new Integer(valor);
+    public void setValor(Object valor) {
+        Integer inteiro = (Integer) valor;
         this.valor = inteiro;
     }
     
