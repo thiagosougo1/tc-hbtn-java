@@ -1,7 +1,7 @@
 public class PersonagemGame {
 
-    String nome;
-    int saudeAtual;
+    public String nome;
+    public int saudeAtual;
 
     public PersonagemGame() {
         this.nome = nome;
