@@ -1,9 +1,16 @@
 package TiposPrimitivos_Wrapper.inteiro_positivo;
 
 public class InteiroPositivo {
-    public static void main(String[] args) {
-        int valor = 1;
-        Integer x1 = new Integer(valor);
-        System.out.println(x1);
+    String valor;
+    public InteiroPositivo(String valor){
+        this.valor = valor;
+    }
+
+    String getValor(){
+        return valor;
+    }
+
+    Boolean ehPrimo(){
+        return true;
     }
 }
