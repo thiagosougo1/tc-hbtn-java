@@ -1,3 +1,5 @@
-public class Feliz  extends Humor {
+package humor;
+
+public class Feliz extends Humor {
     
 }
