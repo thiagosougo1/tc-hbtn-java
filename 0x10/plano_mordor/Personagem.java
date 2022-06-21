@@ -6,22 +6,21 @@ import humor.MuitoFeliz;
 import humor.Triste;
 
 public class Personagem {
-    int pontosDeFelicidade;
 
     Personagem(){
     }   
 
     public Humor obterHumorAtual(){
-        if(pontosDeFelicidade < -5){
+        if(Comida.getPontosDeFelicidade() < -5){
             Irritado irritado = new Irritado();
             return irritado;
-        } else if(pontosDeFelicidade >= -5 && pontosDeFelicidade <= 0){
+        } else if(Comida.getPontosDeFelicidade() >= -5 && Comida.getPontosDeFelicidade() <= 0){
             Triste triste = new Triste();
             return triste;
-        } else if(pontosDeFelicidade > 0 && pontosDeFelicidade < 15 ){
+        } else if(Comida.getPontosDeFelicidade() > 0 && Comida.getPontosDeFelicidade() < 15 ){
             Feliz feliz = new Feliz();
             return feliz;
-        } else if(pontosDeFelicidade > 15){
+        } else if(Comida.getPontosDeFelicidade() > 15){
             MuitoFeliz muitoFeliz = new MuitoFeliz();;
             return muitoFeliz;
         }
@@ -29,10 +28,11 @@ public class Personagem {
     }
 
     public void comer(Comida[] comidas){
+         
     }
 
     @Override
     public String toString(){
-        return pontosDeFelicidade + " - " + obterHumorAtual().getClass().getName(); 
+        return Comida.getPontosDeFelicidade() + " - " + obterHumorAtual().getClass().getName(); 
     }
 }

@@ -2,7 +2,7 @@ package comida;
 
 public class BoloDeMel extends Comida {
     public BoloDeMel(){
-        super();
-        pontosDeFelicidade = 5;
+        super(pontosDeFelicidade);
+        setPontosDeFelicidade(5);
     }
 }   

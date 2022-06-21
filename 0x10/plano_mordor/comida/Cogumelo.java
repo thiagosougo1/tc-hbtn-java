@@ -2,7 +2,7 @@ package comida;
 
 public class Cogumelo extends Comida {
     public Cogumelo(){
-        super();
-        pontosDeFelicidade = -10;
+        super(pontosDeFelicidade);
+        setPontosDeFelicidade(-10);
     }
 }
