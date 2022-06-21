@@ -1,8 +1,9 @@
 package comida;
 
-public class Cram extends Comida {
-    public Cram(){
+public class Cram extends Comida{
+
+    public Cram(int pontosDeFelicidade) {
         super(pontosDeFelicidade);
-        setPontosDeFelicidade(2);
     }
+    
 }

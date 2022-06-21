@@ -1,8 +1,9 @@
 package comida;
 
-public class Melao extends Comida {
-    public Melao(){
+public class Melao extends Comida{
+
+    public Melao(int pontosDeFelicidade) {
         super(pontosDeFelicidade);
-        setPontosDeFelicidade(1);
     }
+    
 }
