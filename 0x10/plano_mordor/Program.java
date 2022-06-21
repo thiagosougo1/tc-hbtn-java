@@ -1,3 +1,12 @@
+import comida.BoloDeMel;
+import comida.Cogumelo;
+import comida.Comida;
+import comida.Cram;
+import comida.Lembas;
+import comida.Maca;
+import comida.Melao;
+import comida.OutraComida;
+
 public class Program {
     public static void main(String[] args) {
         Personagem gandalf = new Personagem();
