@@ -5,6 +5,6 @@ public class Numeros0a99 {
             System.out.print(i + ", ");
             i++;
         }
-        System.out.println("99\n");
+        System.out.println("99");
     }
 }
