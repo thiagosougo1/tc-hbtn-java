@@ -14,5 +14,4 @@ public abstract class Comida {
     public void setPontosDeFelicidade(int pontosDeFelicidade) {
         this.pontosDeFelicidade = pontosDeFelicidade;
     }
-
 }

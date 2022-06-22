@@ -1,5 +1,5 @@
 package plano_mordor.humor;
 
-public class Triste {
+public class Triste extends Humor{
     
 }
