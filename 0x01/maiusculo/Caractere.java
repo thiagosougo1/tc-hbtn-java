@@ -1,4 +1,3 @@
-package maiusculo;
 
 public class Caractere {
 
