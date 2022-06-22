@@ -1,9 +1,8 @@
-package comida;
+package plano_mordor.comida;
 
 public class Cram extends Comida{
 
     public Cram(int pontosDeFelicidade) {
-        super(pontosDeFelicidade);
+        super(2);
     }
-    
 }

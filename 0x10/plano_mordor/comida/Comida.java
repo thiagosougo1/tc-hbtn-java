@@ -1,17 +1,18 @@
-package comida;
+package plano_mordor.comida;
 
-public abstract class Comida{
-    protected static int pontosDeFelicidade;
-
+public abstract class Comida {
+    protected int pontosDeFelicidade;
+ 
     public Comida(int pontosDeFelicidade) {
         setPontosDeFelicidade(pontosDeFelicidade);
     }
 
-    public static int getPontosDeFelicidade() {
-        return Comida.pontosDeFelicidade;
+    public int getPontosDeFelicidade() {
+        return this.pontosDeFelicidade;
     }
 
     public void setPontosDeFelicidade(int pontosDeFelicidade) {
         this.pontosDeFelicidade = pontosDeFelicidade;
     }
+
 }

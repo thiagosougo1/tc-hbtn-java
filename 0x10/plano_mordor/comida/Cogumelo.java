@@ -1,9 +1,8 @@
-package comida;
+package plano_mordor.comida;
 
 public class Cogumelo extends Comida{
 
     public Cogumelo(int pontosDeFelicidade) {
-        super(pontosDeFelicidade);
+        super(-10);
     }
-    
 }

@@ -1,7 +1,5 @@
-package humor;
+package plano_mordor.humor;
 
-public abstract class Humor {
-    public Humor(){
-
-    }
+public class Humor {
+    
 }

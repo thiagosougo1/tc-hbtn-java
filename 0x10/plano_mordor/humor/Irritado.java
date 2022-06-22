@@ -1,5 +1,5 @@
-package humor;
+package plano_mordor.humor;
 
-public class Irritado extends Humor {
-    public Irritado(){}
+public class Irritado {
+    
 }
