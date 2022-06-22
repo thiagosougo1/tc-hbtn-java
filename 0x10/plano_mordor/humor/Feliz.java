@@ -1,5 +1,4 @@
-package plano_mordor.humor;
 
-public class Feliz {
+public class Feliz extends Humor{
     
 }
