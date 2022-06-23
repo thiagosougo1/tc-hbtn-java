@@ -49,5 +49,18 @@ public class Program {
         });
 
         System.out.println(tauriel.toString());
+        
+        int letra = 'a';
+            switch(letra) {
+                case 'a':
+                    System.out.printf("Holberton ");
+
+                case 'b':
+                    System.out.printf("School ");
+                    break;
+
+                default:
+                    System.out.printf("Java Course ");
+            }
     }
 }

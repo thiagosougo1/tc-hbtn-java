@@ -1,8 +1,15 @@
+package somar;
 
 public class Program {
     public static void main(String[] args) {
-        System.out.printf("%d\n", Numero.somar(24, 32));
-        System.out.printf("%d\n", Numero.somar(5, 0));
-        System.out.printf("%d\n", Numero.somar(4, -2));
-    }
+        try {
+          int[] myNumbers = {1, 2, 3};
+          System.out.println(myNumbers[10]);
+                System.out.println(myNumbers[0]);
+        } catch (Exception e) {
+          System.out.println("Something went wrong.");
+        } finally {
+          System.out.println("The 'try catch' is finished.");
+        }
+      }
 }
