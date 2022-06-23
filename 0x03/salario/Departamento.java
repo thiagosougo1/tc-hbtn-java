@@ -1,5 +1,4 @@
 
-
 public class Departamento {
     public double valorMeta;
     public double valorAtingidoMeta;
