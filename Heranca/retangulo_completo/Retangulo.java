@@ -4,9 +4,9 @@ public class Retangulo extends FormaGeometrica {
     private double altura;
   
 
-    public Retangulo(double largura, double altura) {
-        this.largura = largura;
-        this.altura = altura;
+    public Retangulo() {
+        setAltura(altura);
+        setLargura(largura);
     }
 
     public double getLargura() {
@@ -29,11 +29,11 @@ public class Retangulo extends FormaGeometrica {
         this.altura = altura;
     }
     
-    @Override
     public double area(){
+        return largura * altura;
     }
 
     public String toString(){
-        return String.format("[Retangulo]" +  largura + " / " + altura);
+        return String.format("[Retangulo] " +  largura + " / " + altura);
     }
 }
