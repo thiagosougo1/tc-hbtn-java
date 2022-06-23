@@ -9,7 +9,7 @@ public class Quadrado {
                 throw new IllegalAccessException("Lado deve possuir valor positivo");
             }
         } catch (IllegalArgumentException e){
-            System.out.println("L");
+            throw new IllegalAccessException("Lado deve possuir valor positivo");
         }
         return lado;
     }
