@@ -1,6 +1,3 @@
-package livraria.exceptions;
-
-import livraria.Livro;
 
 public class Program {
     public static void main(String[] args) {
