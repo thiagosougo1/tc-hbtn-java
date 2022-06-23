@@ -1,4 +1,3 @@
-package livraria;
 
 import exceptions.*;
 import livraria.exceptions.AutorInvalidoException;

@@ -1,5 +1,3 @@
-package livraria;
-
 
 public class LivroEdicaoOuro extends Livro{
 
