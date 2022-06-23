@@ -1,8 +1,8 @@
+package salario;
 
 public class Departamento {
     double valorMeta;
     double valorAntingidoMeta;
-
 
     public Departamento(double valorMeta, double valorAntingidoMeta) {
         setValorMeta(valorMeta);
