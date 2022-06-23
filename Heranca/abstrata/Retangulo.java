@@ -1,5 +1,5 @@
+import forma.FormaGeometrica;
 
-
-public class Retangulo {
+public class Retangulo extends FormaGeometrica{
     
 }

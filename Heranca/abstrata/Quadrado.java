@@ -1,4 +1,5 @@
+import quadrado.Retangulo;
 
-public class Quadrado {
+public class Quadrado extends Retangulo{
     
 }
