@@ -17,7 +17,7 @@ public class Quadrado extends Retangulo {
     }
 
     public String toString(){
-        return "[Quadrado] " + lado;
+        return String.format("[Quadrado] %.2f", lado);
     }
 
     public Object area() {
