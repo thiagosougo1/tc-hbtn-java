@@ -1,5 +1,5 @@
 
-import livraria.exceptions.*;
+import exceptions.*;
 
 public class Livro {
     String titulo;
