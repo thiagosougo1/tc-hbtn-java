@@ -1,4 +1,3 @@
-package divisao;
 public class Numero {
 
     static int resultado = 1;
