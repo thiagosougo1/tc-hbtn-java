@@ -1,4 +1,5 @@
 
+
 public class Quadrado {
 
     public static double area(double lado) throws IllegalAccessException {
@@ -11,7 +12,6 @@ public class Quadrado {
         } catch (IllegalArgumentException e){
             throw new IllegalAccessException("Lado deve possuir valor positivo");
         }
-        return lado;
     }
     
 }
