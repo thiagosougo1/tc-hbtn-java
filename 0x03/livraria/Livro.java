@@ -1,3 +1,4 @@
+package livraria;
 
 import livraria.exceptions.*;
 
