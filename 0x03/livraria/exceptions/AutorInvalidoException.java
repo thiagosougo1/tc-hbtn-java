@@ -1,7 +1,7 @@
-package exceptions;
+package livraria.exceptions;
 
 public class AutorInvalidoException extends Exception{
-    public AutorInvalidoException(String mensagem){
-        System.out.println(mensagem);
+    public AutorInvalidoException(String mensagem) throws Exception{
+        throw new Exception(mensagem);
     }
 }

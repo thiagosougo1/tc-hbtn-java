@@ -1,5 +1,8 @@
+package livraria;
 
 import exceptions.*;
+import livraria.exceptions.AutorInvalidoException;
+import livraria.exceptions.LivroInvalidoException;
 
 public class Livro {
     String titulo;
@@ -28,7 +31,7 @@ public class Livro {
         return this.autor;
     }
 
-    public void setAutor(String autor) throws AutorInvalidoException  {
+    public void setAutor(String autor) throws Exception  {
         if(autor.contains(" "))
           this.autor = autor;
           else
