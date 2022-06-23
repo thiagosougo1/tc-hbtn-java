@@ -8,8 +8,11 @@ public class Numero {
         } catch (Exception e){
             System.out.println("Não eh possivel dividir por zero");
         } finally{
-         
-            System.out.println(a + " / " + b + " = " + a/b);
+            resultado = a / b;
+            if(b == 0)
+            System.out.println(a + " / " + b + " = 0");
+            else
+            System.out.println(a + " / " + b + " = " + resultado);
 
         }
     }
