@@ -1,4 +1,4 @@
-package retangulo;
+package retangulo_completo;
 
 public class Retangulo extends FormaGeometrica {
     private double largura;
@@ -30,4 +30,11 @@ public class Retangulo extends FormaGeometrica {
         this.altura = altura;
     }
     
+    @Override
+    public double area(){
+    }
+
+    public String toString(){
+        return String.format("[Retangulo]" +  largura + " / " + altura);
+    }
 }
