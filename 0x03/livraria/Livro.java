@@ -1,7 +1,6 @@
 package livraria;
 
-import livraria.exceptions.AutorInvalidoException;
-import livraria.exceptions.LivroInvalidoException;
+import livraria.exceptions.*;
 
 public class Livro {
     String titulo;
