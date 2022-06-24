@@ -38,8 +38,7 @@ public class ContaBancariaBasica {
     public void depositar(double valor){
         if(valor > 0)
             setSaldo(valor + getSaldo());
-        else 
-            throw new OperacaoInvalidaException("Valor para deposito deve ser maior que 0");
+
     }
 
     public void sacar(double valor){
