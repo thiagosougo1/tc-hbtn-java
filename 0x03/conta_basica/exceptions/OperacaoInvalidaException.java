@@ -1,4 +1,4 @@
-package conta_bancaria.exceptions;
+package exceptions;
 
 public class OperacaoInvalidaException extends Exception{
     public OperacaoInvalidaException(String mensagem) throws Exception{
