@@ -1,4 +1,3 @@
-package conta_bancaria;
 
 public class Program {
     public static void main(String[] args) {

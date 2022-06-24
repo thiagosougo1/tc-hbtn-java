@@ -1,4 +1,3 @@
-package conta_bancaria;
 
 import exceptions.OperacaoInvalidaException;
 
