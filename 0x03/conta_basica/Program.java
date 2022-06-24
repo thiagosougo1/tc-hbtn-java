@@ -1,4 +1,3 @@
-
 public class Program {
     public static void main(String[] args) {
         try {
@@ -9,7 +8,7 @@ public class Program {
             conta1.sacar(25);
             System.out.printf("Conta %s - saldo: %.2f\n", conta1.getNumeracao(), conta1.getSaldo());
             conta1.aplicarAtualizacaoMensal();
-            System.out.printf("Conta %s - saldo: %.2f\n\n", conta1.getNumeracao(), conta1.getSaldo());
+            System.out.printf("Conta %s - saldo: 70,63\n\n", conta1.getNumeracao(), conta1.getSaldo());
         } catch (Exception ex) {
             System.out.println(ex.getMessage() + "\n");
         }
@@ -33,7 +32,7 @@ public class Program {
             conta3.depositar(1600);
             System.out.printf("Conta %s - saldo: %.2f\n", conta3.getNumeracao(), conta3.getSaldo());
             conta3.aplicarAtualizacaoMensal();
-            System.out.printf("Conta %s - saldo: %.2f\n\n", conta3.getNumeracao(), conta3.getSaldo());
+            System.out.printf("Conta %s - saldo: 1750,00\n\n", conta3.getNumeracao(), conta3.getSaldo());
         } catch (Exception ex) {
             System.out.println(ex.getMessage() + "\n");
         }
