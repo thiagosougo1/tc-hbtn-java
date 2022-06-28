@@ -1,6 +1,4 @@
 import java.util.Locale;
-import produtos.Dvd;
-import produtos.Livro;
 
 public class Program {
     public static void main(String[] args) {
