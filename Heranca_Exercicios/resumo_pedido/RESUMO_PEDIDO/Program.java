@@ -1,5 +1,8 @@
 import java.util.Locale;
 
+import produtos.Dvd;
+import produtos.Livro;
+
 package RESUMO_PEDIDO;
 
 public class Program {
