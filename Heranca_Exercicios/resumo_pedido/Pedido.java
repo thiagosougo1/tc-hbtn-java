@@ -38,6 +38,7 @@ public class Pedido {
     }
 
     public void apresentarResumoPedido() {
+        System.out.println("----------------------------");
         System.out.println("------- RESUMO PEDIDO -------");
         List<ItemPedido> item = Arrays.asList(itens);
 
