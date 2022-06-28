@@ -3,7 +3,7 @@ import java.util.Locale;
 import produtos.Dvd;
 import produtos.Livro;
 
-package RESUMO_PEDIDO;
+import RESUMO_PEDIDO;
 
 public class Program {
     public static void main(String[] args) {
