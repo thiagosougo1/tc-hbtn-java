@@ -1,3 +1,5 @@
+package produtos;
+
 public abstract class Produto {
     protected String titulo;
     protected int ano;
@@ -5,14 +7,45 @@ public abstract class Produto {
     protected double precoBruto;
 
     public Produto(String titulo, int ano, String pais, double precoBruto) {
-        this.titulo = titulo;
-        this.ano = ano;
-        this.pais = pais;
-        this.precoBruto = precoBruto;
+        setTitulo(titulo);
+        setAno(ano);
+        setPais(pais);      
+        setPrecoBruto(precoBruto); 
+   }
+
+    public abstract double obterPrecoLiquido();
+
+
+    public String getTitulo() {
+        return this.titulo;
     }
 
-    public abstract double obterPrecoLiquido(){
-        return 1;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public int getAno() {
+        return this.ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
+    public String getPais() {
+        return this.pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public double getPrecoBruto() {
+        return this.precoBruto;
+    }
+
+    public void setPrecoBruto(double precoBruto) {
+        this.precoBruto = precoBruto;
     }
 
 }
