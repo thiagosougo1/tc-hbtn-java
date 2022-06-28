@@ -38,7 +38,6 @@ public class Pedido {
     }
 
     public void apresentarResumoPedido() {
-        System.out.println("----------------------------");
         System.out.println("------- RESUMO PEDIDO -------");
         List<ItemPedido> item = Arrays.asList(itens);
 
@@ -54,7 +53,7 @@ public class Pedido {
         System.out.printf("TOTAL PRODUTOS: %.2f\n", sumSemDesconto);
         System.out.println("----------------------------");
         System.out.printf("TOTAL PEDIDO: %.2f\n", sum);
-
+        System.out.println("----------------------------");
     }
 
 }
