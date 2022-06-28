@@ -65,5 +65,5 @@ public class Program {
         Pedido pedido4 = new Pedido(5, itensPedido4);
 
         pedido4.apresentarResumoPedido();
-}
+    }
 }

@@ -16,7 +16,7 @@ public class Pedido {
     public double calcularTotal(){
         List<ItemPedido> item = Arrays.asList(itens);
         for(ItemPedido itens : item){
-           sum += (itens.getProduto().obterPrecoLiquido() * itens.getQuantidade()) -  (itens.getProduto().obterPrecoLiquido() * itens.getQuantidade() * getPercentualDesconto() /100);
+           sum += (itens.getProduto().obterPrecoLiquido() * itens.getQuantidade()) -  (itens.getProduto().obterPrecoLiquido() * itens.getQuantidade() * getPercentualDesconto() / 100);
         }
         return sum;
     }
@@ -42,10 +42,9 @@ public class Pedido {
         List<ItemPedido> item = Arrays.asList(itens);
 
         for(ItemPedido itens : item){
-            sum += (itens.getProduto().obterPrecoLiquido() * itens.getQuantidade()) - (itens.getProduto().obterPrecoLiquido() * itens.getQuantidade() * getPercentualDesconto() /100);
             sumSemDesconto += itens.getProduto().obterPrecoLiquido() * itens.getQuantidade();
             System.out.printf("Tipo: %s  Titulo: %s  Preco: %.2f  Quant: %d  Total: %.2f", itens.getProduto().getClass().getSimpleName(), 
-                itens.getProduto().getTitulo(), itens.getProduto().obterPrecoLiquido(), itens.getQuantidade(), sum);
+                itens.getProduto().getTitulo(), itens.getProduto().obterPrecoLiquido(), itens.getQuantidade(),  itens.getProduto().obterPrecoLiquido());
             System.out.println();
         }
         System.out.println("----------------------------");
