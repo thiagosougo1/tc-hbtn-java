@@ -44,7 +44,7 @@ public class Pedido {
         for(ItemPedido itens : item){
             sumSemDesconto += itens.getProduto().obterPrecoLiquido() * itens.getQuantidade();
             System.out.printf("Tipo: %s  Titulo: %s  Preco: %.2f  Quant: %d  Total: %.2f", itens.getProduto().getClass().getSimpleName(), 
-                itens.getProduto().getTitulo(), itens.getProduto().obterPrecoLiquido(), itens.getQuantidade(),  itens.getProduto().obterPrecoLiquido());
+                itens.getProduto().getTitulo(), itens.getProduto().obterPrecoLiquido(), itens.getQuantidade(),  itens.getProduto().obterPrecoLiquido() * itens.getQuantidade());
             System.out.println();
         }
         System.out.println("----------------------------");
