@@ -40,18 +40,18 @@ public class Pedido {
     public void apresentarResumoPedido() {
         System.out.println("------- RESUMO PEDIDO -------");
         List<ItemPedido> item = Arrays.asList(itens);
-
         for(ItemPedido itens : item){
             sumSemDesconto += itens.getProduto().obterPrecoLiquido() * itens.getQuantidade();
             System.out.printf("Tipo: %s  Titulo: %s  Preco: %.2f  Quant: %d  Total: %.2f", itens.getProduto().getClass().getSimpleName(), 
                 itens.getProduto().getTitulo(), itens.getProduto().obterPrecoLiquido(), itens.getQuantidade(),  itens.getProduto().obterPrecoLiquido() * itens.getQuantidade());
             System.out.println();
         }
+        double desc = sumSemDesconto - calcularTotal();
         System.out.println("----------------------------");
-        System.out.printf("DESCONTO: %.2f\n", sumSemDesconto - calcularTotal());
+        System.out.printf("DESCONTO: %.2f\n", desc);
         System.out.printf("TOTAL PRODUTOS: %.2f\n", sumSemDesconto);
         System.out.println("----------------------------");
-        System.out.printf("TOTAL PEDIDO: %.2f\n", calcularTotal());
+        System.out.printf("TOTAL PEDIDO: %.2f\n", calcularTotal() /2);
         System.out.println("----------------------------");
     }
 
