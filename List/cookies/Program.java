@@ -8,12 +8,12 @@ public class Program {
         pedido.adicionarPedidoCookie(new PedidoCookie("Nutella", 3));
         pedido.adicionarPedidoCookie(new PedidoCookie("Baunilha", 2));
 
-        System.out.println(String.format("Total: %d", pedido.obterTotalCaixas()));
+        System.out.println(String.format("Total: %d", Pedido.obterTotalCaixas()));
 
         pedido.adicionarPedidoCookie(new PedidoCookie("Chocolate", 1));
         pedido.adicionarPedidoCookie(new PedidoCookie("Nutella", 1));
 
-        System.out.println(String.format("Total: %d", pedido.obterTotalCaixas()));
+        System.out.println(String.format("Total: %d", Pedido.obterTotalCaixas()));
 
         int quantidadeRemovidos = pedido.removerSabor("Nutella");
 

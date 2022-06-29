@@ -1,28 +1,41 @@
 package cookies;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Iterator;
 
 public class Pedido {
-    ArrayList<PedidoCookie> cookies = new ArrayList<>();
-    int soma;
+    static ArrayList<PedidoCookie> cookies;
 
+    public Pedido(){
+        cookies = new ArrayList<>();
+    }
     public void adicionarPedidoCookie(PedidoCookie pedidoCookie) {
         cookies.add(pedidoCookie);
     }
 
-    public Object obterTotalCaixas() {
+    static public int obterTotalCaixas() {
+        int soma = 0;
         for(PedidoCookie pedido : cookies){
-            soma += pedido.getQuantidadeCaixas();
+            soma += pedido.getQuantidadeCaixas();            
         }
         return soma;
     }
 
     public int removerSabor(String sabor) {
-        int tam = cookies.size();
-        cookies.remove(sabor);
-        return tam;
+       
+        int total = 0 ;
+
+        Iterator<PedidoCookie> iterator = cookies.iterator();
+        while (iterator.hasNext()) {
+            PedidoCookie pedidoCookie = iterator.next();
+            if (pedidoCookie.getSabor().equalsIgnoreCase(sabor)){
+                total += pedidoCookie.getQuantidadeCaixas() ;
+                iterator.remove();
+            }
+
+        }
+        return total ;
+
     }
     
 }
