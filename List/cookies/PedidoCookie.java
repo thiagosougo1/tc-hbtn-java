@@ -1,3 +1,4 @@
+package cookies;
 
 public class PedidoCookie {
     String sabor;
