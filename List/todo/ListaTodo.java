@@ -1,3 +1,4 @@
+package todo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +18,7 @@ public class ListaTodo {
                 i++;
             }
              if(i == 2){
-                throw new IllegalArgumentException("Numero jah contido na lista");
+                throw new IllegalArgumentException("Tarefa com identificador "+ task.getIdentificador()+" ja existente na lista");
             }
         }
     }
