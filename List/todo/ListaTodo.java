@@ -1,9 +1,10 @@
 package todo;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListaTodo {
-    static ArrayList<Tarefa> tarefas;
+    static List<Tarefa> tarefas;
 
     public ListaTodo(){
         tarefas = new ArrayList<>();
