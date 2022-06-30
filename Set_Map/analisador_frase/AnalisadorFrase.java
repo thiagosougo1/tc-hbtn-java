@@ -11,7 +11,7 @@ public class AnalisadorFrase {
 
     public static TreeMap contagemPalavras(String frase){
         TreeMap<String, Integer> contPalavras = new TreeMap<String, Integer>();
-        String[] fraseSplit = frase.toLowerCase().replace(".", " ").replace("?", " ").replace("!", " ").split(" ");
+        String[] fraseSplit = frase.toLowerCase().replace(".", "").replace("?", "").replace("!", "").split(" ");
         List<String> listPalavras = new ArrayList<>(List.of(fraseSplit));
 
         for (int i = 0; i < fraseSplit.length; i++) {
