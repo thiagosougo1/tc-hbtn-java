@@ -6,7 +6,7 @@ public class Tarefa {
     int identificador;
 
     public Tarefa(String descricao, int identificador) {
-        modificcarDescricao(descricao);
+        modificarDescricao(descricao);
         setIdentificador(identificador);
     }
 
@@ -14,7 +14,7 @@ public class Tarefa {
         return this.descricao;
     }
 
-    public void modificcarDescricao(String descricao) {
+    public void modificarDescricao(String descricao) {
         if(descricao != null && descricao != ""){
             this.descricao = descricao;
         } else throw new IllegalArgumentException("Descricao de tarefa invalida");

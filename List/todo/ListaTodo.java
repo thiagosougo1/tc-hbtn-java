@@ -12,7 +12,14 @@ public class ListaTodo {
 
     public void adicionarTarefa(Tarefa tarefa){
         tarefas.add(tarefa);       
+        int i = 0;
         for(Tarefa task : tarefas){
+            if(task.getIdentificador() == tarefa.getIdentificador()){   
+                i++;
+            }
+             if(i == 2){
+                throw new IllegalArgumentException("Numero jah contido na lista");
+            }
         }
     }
 
