@@ -1,4 +1,3 @@
-package analisador_frase;
 
 import java.util.ArrayList;
 import java.util.Collections;
