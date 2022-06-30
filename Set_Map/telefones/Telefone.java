@@ -4,7 +4,7 @@ public class Telefone {
 
     String codArea;
     String numero;
-    public Telefone(String codArea, String numero) {
+    public Telefone(String codigoArea, String numero) {
         setCodArea(codArea);
         setNumero(numero);
     }
@@ -23,6 +23,11 @@ public class Telefone {
 
     public void setNumero(String numero) {
         this.numero = numero;
+    }
+
+    @Override
+    public String toString(){
+        return null;
     }
 
   
