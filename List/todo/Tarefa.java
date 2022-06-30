@@ -6,21 +6,18 @@ public class Tarefa {
     int identificador;
 
     public Tarefa(String descricao, int identificador) {
-        setDescricao(descricao);
-        setIdentificador(identificador
-);    }
-
+        modificcarDescricao(descricao);
+        setIdentificador(identificador);
+    }
 
     public String getDescricao() {
         return this.descricao;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public boolean isEstahFeita() {
-        return this.estahFeita;
+    public void modificcarDescricao(String descricao) {
+        if(descricao != null && descricao != ""){
+            this.descricao = descricao;
+        } else throw new IllegalArgumentException("Descricao de tarefa invalida");
     }
 
     public boolean getEstahFeita() {
