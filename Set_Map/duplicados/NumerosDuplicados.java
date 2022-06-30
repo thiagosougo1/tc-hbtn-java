@@ -10,18 +10,18 @@ import java.util.TreeSet;
 public class NumerosDuplicados {
     public static TreeSet buscar(int[] valores){
         List<Integer> valor = new ArrayList<>();
-        Set<Integer> ts = new TreeSet<>();
+        Set<Integer> hs = new HashSet<>();
 
         for (int i = 0; i < valores.length; i++) {
             valor.add(valores[i]);
             
             if(Collections.frequency(valor, valores[i]) > 1){
-                ts.add(valores[i]);
+                hs.add(valores[i]);
             };
         }
 
-        System.out.println(ts);
+        TreeSet<Integer> ts = new TreeSet<>(hs);
 
-        return null;
+        return ts;
     }
 }
