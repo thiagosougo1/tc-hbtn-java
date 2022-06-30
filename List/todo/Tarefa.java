@@ -1,4 +1,3 @@
-package todo;
 
 public class Tarefa {
     String descricao;
