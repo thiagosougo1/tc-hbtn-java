@@ -2,19 +2,20 @@ package telefones;
 
 public class Telefone {
 
-    String codArea;
+    String codigoArea;
     String numero;
     public Telefone(String codigoArea, String numero) {
-        setCodArea(codArea);
+        setCodigoArea(codigoArea);
         setNumero(numero);
+        toString();
     }
 
-    public String getCodArea() {
-        return this.codArea;
+    public String getCodigoArea() {
+        return this.codigoArea;
     }
 
-    public void setCodArea(String codArea) {
-        this.codArea = codArea;
+    public void setCodigoArea(String codigoArea) {
+        this.codigoArea = codigoArea;
     }
 
     public String getNumero() {
@@ -25,9 +26,10 @@ public class Telefone {
         this.numero = numero;
     }
 
+
     @Override
     public String toString(){
-        return null;
+        return "(" + getCodigoArea() + ") " + getNumero();
     }
 
   
