@@ -1,14 +1,23 @@
 
+public class Post implements Comparable<Post>{    
+    private Autor autor;
+    private String titulo;
+    private String corpo;
+    private Categorias categoria;
 
-public class Post {
+    public Post(Autor autor, String titulo, String corpo, Categorias categoria) {
+        setAutor(autor);
+        setTitulo(titulo);
+        setCorpo(corpo);
+        setCategoria(categoria);
+    }
 
-    String titulo;
-    String subtitulo;
+    public Autor getAutor(){
+        return autor;
+    }
 
-    public Post(Autor autor, String titulo, String subtitulo, Categorias categoria) {
-        setTitulo(titulo); 
-        setSubtitulo(subtitulo);  
-        toString();
+    public void setAutor(Autor autor) {
+        this.autor = autor;
     }
 
     public String getTitulo() {
@@ -19,17 +28,30 @@ public class Post {
         this.titulo = titulo;
     }
 
-    public String getSubtitulo() {
-        return this.subtitulo;
+    public String getcorpo() {
+        return this.corpo;
     }
 
-    public void setSubtitulo(String subtitulo) {
-        this.subtitulo = subtitulo;
+    public void setCorpo(String corpo) {
+        this.corpo = corpo;
+    }
+
+    public Categorias getCategoria(){
+        return categoria;
+    }
+
+    public void setCategoria(Categorias categoria){
+        this.categoria = categoria;
     }
 
     @Override
     public String toString(){
         return titulo;
+    }
+
+    @Override
+    public int compareTo(Post postagem) {
+        return toString().compareTo(postagem.toString());
     }
     
 }
