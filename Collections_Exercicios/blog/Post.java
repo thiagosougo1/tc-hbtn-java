@@ -1,3 +1,4 @@
+package blog;
 
 public class Post {
     String autor;
