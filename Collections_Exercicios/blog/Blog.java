@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class Blog {
-    List<Post> postagens;
+    private List<Post> postagens;
     public void adicionarPostagem(Post postagem) {
        postagens = new ArrayList<>(List.of(postagem));
     }
