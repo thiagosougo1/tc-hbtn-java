@@ -46,6 +46,6 @@ public class Celular {
     }
 
     public void listarContatos() {
-        contatos.forEach(x -> System.out.println(x.getNome() + " -> " + x.getNumeroDeTelefone() + " (" + x.getTipoNumero() + ") "));
+        contatos.forEach(x -> System.out.println(x.getNome() + " -> " + x.getNumeroDeTelefone() + " (" + x.getTipoNumero() + ")"));
     }    
 }
