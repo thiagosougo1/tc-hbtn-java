@@ -1,8 +1,7 @@
 package celular;
 
-public class TipoNumero {
+public enum TipoNumero {
 
-    public static Object CASA;
-    public static Object CELULAR;
+    CASA, CELULAR, COMERCIAL;
     
 }
