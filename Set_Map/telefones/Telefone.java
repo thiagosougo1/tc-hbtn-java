@@ -26,7 +26,6 @@ public class Telefone {
         this.numero = numero;
     }
 
-
     @Override
     public String toString(){
         return "(" + getCodigoArea() + ") " + getNumero();
