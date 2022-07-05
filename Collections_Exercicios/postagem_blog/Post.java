@@ -1,4 +1,3 @@
-package postagem_blog;
 
 public class Post implements Comparable<Post>{    
     private Autor autor;

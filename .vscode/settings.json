@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
         "TiposPrimitivos_Wrapper/inteiro_positivo",
+        "0x10/plano_mordor",
         "0x09/agregacao",
         "0x04/personagem",
-        "0x10/plano_mordor"
+        "Collections_Exercicios/postagem_blog"
     ]
 }
