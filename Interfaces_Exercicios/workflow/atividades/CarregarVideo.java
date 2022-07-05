@@ -1,5 +1,12 @@
-package workflow.atividades;
+ .atividades;
 
-public class CarregarVideo {
-    
+public class CarregarVideo implements Atividade{
+    @Override
+    public void executar(){
+        System.out.println("carregando video");
+    }
+
+    public CarregarVideo(){
+        executar();
+    }
 }

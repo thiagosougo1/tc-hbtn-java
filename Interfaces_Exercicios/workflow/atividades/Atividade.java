@@ -1,5 +1,5 @@
-package workflow.atividades;
+ .atividades;
 
-public class Atividade {
-    
+public interface Atividade {
+    void executar();
 }
