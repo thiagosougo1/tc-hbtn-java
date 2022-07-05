@@ -1,4 +1,4 @@
- .atividades;
+ 
 
 public class ModificarStatusVideo implements Atividade{
     @Override

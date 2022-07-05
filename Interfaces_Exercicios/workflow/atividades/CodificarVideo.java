@@ -1,4 +1,4 @@
- .atividades;
+ 
 
 public class CodificarVideo implements Atividade{
     @Override

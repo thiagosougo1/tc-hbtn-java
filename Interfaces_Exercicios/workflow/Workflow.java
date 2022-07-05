@@ -1,6 +1,4 @@
- ;
 
-import workflow.atividades.Atividade;
 
 public class Workflow {
     
