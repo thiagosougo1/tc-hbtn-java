@@ -1,6 +1,9 @@
 import provedores.*;
+import java.util.*;
 
 public class Program {
+    Locale.setDefault(Locale.FRENCH);
+
     public static void main(String[] args) {
         Pedido pedido1 = new Pedido(1, 1500, 234.90);
         Pedido pedido2 = new Pedido(2, 600, 124.00);
