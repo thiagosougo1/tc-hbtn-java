@@ -1,5 +1,5 @@
 public class Midia {
-    String nome;
+    private String nome ;
 
     public Midia(String nome) {
         super();
@@ -7,15 +7,15 @@ public class Midia {
     }
 
     public String getNome() {
-        return this.nome;
+        return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String toString(){
+    @Override
+    public String toString() {
         return String.format("Tipo: %s - Nome: %s", this.getClass().getSimpleName(), getNome());
     }
-
 }
