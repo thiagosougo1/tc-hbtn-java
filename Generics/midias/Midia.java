@@ -2,6 +2,7 @@ public class Midia {
     String nome;
 
     public Midia(String nome) {
+        super();
         setNome(nome);
     }
 
@@ -14,7 +15,7 @@ public class Midia {
     }
 
     public String toString(){
-        return String.format("Tipo %s - Nome: %s", this.getClass().getName(), getNome());
+        return String.format("Tipo: %s - Nome: %s", this.getClass().getSimpleName(), getNome());
     }
 
 }

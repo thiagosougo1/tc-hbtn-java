@@ -1,20 +1,15 @@
 import java.util.*;
 
-public class Biblioteca<T> {
-    T coisa;
-    private List<T> valores = new ArrayList<>();
+public class Biblioteca<T>{
 
-    public Biblioteca(T coisa, List<T> valores) {
-        this.coisa = coisa;
-        this.valores = valores;
-    }
+    private List<T> lista = new ArrayList<>();
 
     public void adicionarMidia(T tipo) {
 
-        valores.add(tipo);
+        lista.add(tipo);
     }
 
     public List<T> obterListaMidias() {
-        return valores;
+        return lista;
     }
 }
