@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Biblioteca<T>{
+public class Biblioteca<T> extends Midia{
 
     private List<T> lista = new ArrayList<>();
 
