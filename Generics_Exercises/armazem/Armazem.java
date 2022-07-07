@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Armazem<T> extends Armazenavel<T> {
+public class Armazem<T> implements Armazenavel<T> {
     Map<String, T> itensArmazenados = new TreeMap<String, T>();
 
     public Armazem(){
