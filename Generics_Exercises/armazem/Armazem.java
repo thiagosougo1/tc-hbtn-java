@@ -1,7 +1,11 @@
 import java.util.*;
 
-public class Armazem<T> extends Armazenavel {
+public class Armazem<T> extends Armazenavel<T> {
     Map<String, T> itensArmazenados = new TreeMap<String, T>();
+
+    public Armazem(){
+
+    }
 
     @SuppressWarnings("unchecked")
     @Override

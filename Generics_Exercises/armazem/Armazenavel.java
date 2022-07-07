@@ -1,4 +1,8 @@
 public class Armazenavel<T> {
+    public Armazenavel(){
+
+    }
+    
     public void adicionarAoInventario(String nome, T coisa){
 
     }
