@@ -1,6 +1,6 @@
 public class FolhaPagamento implements CalculadorDeSalario{
     public static double calcularLiquido(Funcionario funcionario, CalculadorDeSalario calculador){
-        return 0;
+        return calculador.calcular(funcionario.getSalario());
     }
 
     @Override
