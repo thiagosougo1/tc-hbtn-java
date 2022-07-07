@@ -6,6 +6,10 @@ public class Midia {
         setNome(nome);
     }
 
+    public Midia(){
+
+    }
+    
     public String getNome() {
         return nome;
     }

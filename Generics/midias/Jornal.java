@@ -6,7 +6,6 @@ public class Jornal extends Midia {
         setQuantidadeArtigos(quantidadeArtigos);
     }
 
-
     public int getQuantidadeArtigos() {
         return this.quantidadeArtigos;
     }
