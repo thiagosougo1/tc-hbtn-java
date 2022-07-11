@@ -55,6 +55,6 @@ public class Produto {
     }
 
     public String toString(){
-        return getNome() + " " + getPreco() + " " + getQuantidadeEmEstoque() + " " + getTipo();
+        return String.format("%s %f %f %d %s", getNome(), getPreco(), getPeso(), getQuantidadeEmEstoque(), getTipo());
     }
 }
