@@ -13,6 +13,7 @@ public abstract class Armazem<T> implements Armazenavel<T> {
         itensArmazenados.put(nome, (T) valor);
     }
 
+    
     @Override
     public T obterDoInventario(String nome){
         return itensArmazenados.get(nome);
