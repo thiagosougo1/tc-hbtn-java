@@ -21,6 +21,11 @@ public class Consulta {
     }
 
     public static List<Pedido> obterPedidosComEletronicos(List<Pedido> listaPedidos){
-        return listaPedidos.stream().filter(c -> c.equals(CategoriaProduto.ELETRONICO)).collect(Collectors.toList());
+        List<Pedido> eletronico = listaPedidos.stream()
+            .filter(p -> {
+                return p.getProdutos().stream().anyMatch(q -> q.getCategoria().equals(CategoriaProduto.ELETRONICO));
+        }).collect(Collectors.toList());
+
+        return eletronico;
     }
 }
