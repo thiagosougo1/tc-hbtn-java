@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class Consulta {
@@ -27,5 +28,16 @@ public class Consulta {
         }).collect(Collectors.toList());
 
         return eletronico;
+    }
+    
+    public static List<Produto> aplicar15PorcentoDescontoEletronicos(List<Produto> listaProduto){
+        listaProduto.stream()
+            .forEach(p -> {
+                if(p.getCategoria().equals(CategoriaProduto.ELETRONICO)){
+                    double desconto = p.getPreco() - (p.getPreco() * 0.15);
+                    p.setPreco(desconto);
+                };
+            });
+        return listaProduto;
     }
 }
