@@ -36,7 +36,7 @@ public class SerializarEstudantes<E> {
             ObjectInputStream ois = new ObjectInputStream(fin);
 
             estudantes = (List<Estudante>)ois.readObject();
-            
+            ois.close();
         } catch(Exception ex){
             System.out.println("Nao foi possivel desserializar");
         }
