@@ -25,7 +25,7 @@ public class SerializarEstudantes<E> {
             oos.close();
         }
         catch(Exception ex){
-            System.err.println("Nao foi possivel serializar");
+            System.out.println("Nao foi possivel serializar");
         }
     }
 
@@ -38,7 +38,7 @@ public class SerializarEstudantes<E> {
             estudantes = (List<Estudante>)ois.readObject();
             
         } catch(Exception ex){
-            System.err.println("Nao foi possivel desserializar");
+            System.out.println("Nao foi possivel desserializar");
         }
 
         return estudantes;
