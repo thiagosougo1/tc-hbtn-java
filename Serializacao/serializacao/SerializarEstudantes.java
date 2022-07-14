@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-
+@SuppressWarnings("unchecked") 
 public class SerializarEstudantes<E> {
     private String nomeArquivo;
 
@@ -39,7 +39,7 @@ public class SerializarEstudantes<E> {
             ois.close();
         } catch(Exception ex){
             System.out.println("Nao foi possivel desserializar");
-        }
+        } 
 
         return estudantes;
     }
