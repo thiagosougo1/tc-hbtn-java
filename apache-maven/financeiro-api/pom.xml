@@ -5,10 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.techcamps.financeiro</groupId>
-  <artifactId>demo</artifactId>
+  <artifactId>financeiro-api</artifactId>
   <version>0.0.1</version>
+  <description>Projeto Financeiro Demo usando Apache Maven Demo</description>
 
-  <name>demo</name>
+  <name>Projeto Financeiro Demo</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
