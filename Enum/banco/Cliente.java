@@ -1,6 +1,5 @@
-package banco;
+import java.util.ArrayList;
 
-import java.util.*;
 public class Cliente {
     private String nome;
     private ArrayList<Double> transacoes;
