@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37cf632c-cd41-465e-ba4b-ea6f0d14c3d6" name="Changes" comment="" />
+    <list default="true" id="37cf632c-cd41-465e-ba4b-ea6f0d14c3d6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrintFormatacaoNumeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrintFormatacaoNumeros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Serializacao/serializacao/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Serializacao/serializacao/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-maven/financeiro-api/src/main/java/FinanceiroMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-maven/financeiro-api/src/main/java/FinanceiroMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-maven/financeiro-api/target/classes/FinanceiroMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-maven/financeiro-api/target/classes/FinanceiroMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-maven/financeiro-api/target/test-classes/com/techcamps/financeiro/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apache-maven/financeiro-api/target/test-classes/com/techcamps/financeiro/AppTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +26,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -29,18 +37,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/thiagosg/Área de Trabalho/Bootcamp/Java 1/tc-hbtn-java/0x00-java-hello_world/Println.java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/thiagosg/Área de Trabalho/Bootcamp/Java 1/tc-hbtn-java/0x00-java-hello_world/Println.java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,6 +59,9 @@
       <updated>1655133203409</updated>
       <workItem from="1655133206847" duration="703000" />
       <workItem from="1655134224921" duration="2246000" />
+      <workItem from="1658148935868" duration="7000" />
+      <workItem from="1658148956465" duration="33000" />
+      <workItem from="1658149330289" duration="15000" />
     </task>
     <servers />
   </component>
