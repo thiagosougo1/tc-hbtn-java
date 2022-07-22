@@ -1,3 +1,4 @@
+package celular;
 
 public class Contato {
     String nome;
